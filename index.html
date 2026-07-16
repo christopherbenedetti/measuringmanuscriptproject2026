@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- EDIT: the title shows in the browser tab and in search results -->
-  <title>The Novellino's Prologue between manuscripts and printed editions</title>
+  <title>The <i>Novellino</i>'s Prologue: Between Manuscripts and Printed Editions</title>
 
   <!-- This loads the styling. You usually don't need to touch it. -->
   <link rel="stylesheet" href="style.css">
@@ -16,44 +16,344 @@
 
   <!-- ===== HEADER: edit the title, the one-line description, and your name ===== -->
   <header>
-    <h1>My Project Title</h1>
-    <p class="subtitle">A one-line description of what this project shows.</p>
-    <p class="byline">Your Name &middot; <span id="year"></span></p>
+    <h1>The <i>Novellino</i>'s Prologue: Between Manuscripts and Printed Editions</h1>
+    <p class="subtitle">Collating five witnesses of the <i>Novellino</i>'s Prologue to explore its textual transmission and variation.</p>
+    <p class="byline">Christopher Benedetti &middot; <span id="year"></span></p>
   </header>
 
   <!-- ===== ABSTRACT: a short paragraph for someone who has never seen this ===== -->
   <section>
     <h2>Abstract</h2>
-    <p>
-      Two or three sentences. State the question, what you measured, and the one
-      result the figure below shows.
-    </p>
+    <p> 
+    The Novellino is one of the earliest collections of novellas in Italian literature. It is distinguished by the presence of a prologue and by a complex textual tradition that preserves at least two distinct redactions in both manuscript and printed witnesses. Since the prologue survives in only some of these witnesses, an important question arises: how are they related?
+To investigate these relationships, a collation was carried out on five witnesses:
+</p>
+
+<ul>
+    <li><strong>P</strong> – Florence, Biblioteca Nazionale Centrale, MS Panciatichiano 32.</li>
+
+    <li><strong>V</strong> – Vatican City, Biblioteca Apostolica Vaticana, MS Vaticano latino 3214.</li>
+
+    <li><strong>Gz</strong> – <em>Editio princeps</em> (1525), edited by Carlo Gualteruzzi.</li>
+
+    <li><strong>Gz2</strong> – Reprint of the first edition.</li>
+
+    <li><strong>Bn</strong> – Fourth printed edition (1572), edited by the philologist Vincenzio Borghini.</li>
+</ul>
+The collation provided the basis for constructing a dendrogram which, by clustering the witnesses according to their shared textual errors, reveals patterns of textual affinity among them.
+</p>
+
+  
+  </p>
   </section>
 
   <!-- ===== FIGURE: replace figure.png with your own image ===== -->
   <section>
     <h2>Result</h2>
     <figure>
-      <img src="figure.png" alt="Describe your figure here, for screen readers and search">
-      <figcaption>Figure 1. One sentence saying what the figure shows.</figcaption>
+      <img src="stemma_prologue.png" alt="Describe your figure here, for screen readers and search">
+      <figcaption>Figure 1. Dendrogram of textual affinities.</figcaption>
     </figure>
   </section>
 
   <!-- ===== DATA: edit the rows, or replace the whole table ===== -->
-  <section>
-    <h2>The numbers</h2>
-    <p>The full data is in <a href="data.csv">data.csv</a>.</p>
-    <table>
-      <thead>
-        <tr><th>Item</th><th>Measure</th><th>Value</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Example A</td><td>count</td><td>42</td></tr>
-        <tr><td>Example B</td><td>count</td><td>17</td></tr>
-        <tr><td>Example C</td><td>count</td><td>8</td></tr>
-      </tbody>
-    </table>
-  </section>
+
+<style>
+
+.table-wrapper {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.filologica {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  line-height: 1.35;
+  background: #fffdf8;
+  color: #30251b;
+}
+
+.filologica th {
+  background: #4b2e1e;
+  color: white;
+  padding: 10px 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.filologica td {
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd2c4;
+  border-right: 1px solid #eee5da;
+
+  /* permette di spezzare anche parole lunghe */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* larghezza delle colonne */
+.filologica th:nth-child(1),
+.filologica td:nth-child(1),
+.filologica th:nth-child(2),
+.filologica td:nth-child(2),
+.filologica th:nth-child(3),
+.filologica td:nth-child(3),
+.filologica th:nth-child(4),
+.filologica td:nth-child(4),
+.filologica th:nth-child(5),
+.filologica td:nth-child(5) {
+  width:20%;
+}
+
+
+.filologica tr:nth-child(even) {
+  background:#f7f1e8;
+}
+
+.filologica tr:hover {
+  background:#eee1cf;
+}
+
+
+.filologica strong {
+  color:#8b3a20;
+  font-weight:bold;
+  background:#f6e6db;
+  padding:1px 3px;
+}
+
+
+</style>
+
+</style>
+
+
+<section>
+
+<h2>Comparison of textual variants</h2>
+
+<p>
+The full data is in  
+<a href="tabella_varianti.csv">tabella_varianti.csv</a>.
+</p>
+
+
+<div class="table-wrapper">
+
+<table class="filologica">
+
+<thead>
+<tr>
+  <th>V</th>
+  <th>Gz</th>
+  <th>Gz2</th>
+  <th>P</th>
+  <th>Bn</th>
+</tr>
+</thead>
+
+
+<tbody>
+
+<tr>
+<td>Quando lo nostro signore Gesù Cristo parlava umanamente con noi infra all’altre sue parole ne disse</td>
+<td>Quando lo nostro signore Gesù Cristo parlava umanamente con noi infra all’altre sue parole ne disse</td>
+<td>Quando lo nostro signore Gesù Cristo parlava umanamente con noi infra all’altre sue parole ne disse</td>
+<td>Quando <strong>il</strong> nostro signore Gesù Cristo parlava umanamente con noi fra <strong>l’altre</strong> sue parole ne disse</td>
+<td><strong>Comune sententia e verace si è</strong></td>
+</tr>
+
+
+<tr>
+<td>Abbondanza</td>
+<td>Abbondanza</td>
+<td>Abbondanza</td>
+<td><strong>Baldanza</strong></td>
+<td><strong>Baldanza</strong></td>
+</tr>
+
+
+<tr>
+<td>Le vostre menti e le vostre parole nel piacere di Dio</td>
+<td>Le vostre menti e le vostre parole nel piacere di Dio</td>
+<td>Le vostre menti e le vostre parole nel piacere di iddio</td>
+<td><strong>La vostra mente</strong> e le vostre parole <strong>primamente</strong> nel piacere di iddio</td>
+<td><strong>Le vostre menti primamente</strong> nel piacere di Dio</td>
+</tr>
+
+
+<tr>
+<td>Parlando, onorando e temendo e laudando quel signore nostro</td>
+<td>Parlando, onorando e temendo e laudando quel signore nostro</td>
+<td>Parlando, onorando e temendo e laudando quel signore nostro</td>
+<td>Parlando, onorando, tenendo e laudando <strong>quello</strong> <strong>signore</strong></td>
+<td><strong>Onorando</strong>, temendo e laudando <strong>lui</strong></td>
+</tr>
+
+
+<tr>
+<td>Che n’amò prima che elli ne criasse e prima che noi medesimi ci amassimo</td>
+<td>Che n’amò prima che elli ne criasse e prima che noi medesimi ci amassimo</td>
+<td>Che n’amò prima che elli ne criasse e prima che noi medesimi ci amassimo</td>
+<td>Che <strong>ci ama</strong> prima che ci creasse e prima che noi <strong>stesse</strong> ci amassimo</td>
+<td></td>
+</tr>
+
+
+<tr>
+<td>Si può parlare</td>
+<td>Si può parlare</td>
+<td>Si può parlare</td>
+<td>Si può <strong>uomo</strong> parlare</td>
+<td>Si può <strong>uomo</strong> parlare</td>
+</tr>
+
+
+<tr>
+<td>Il corpo</td>
+<td>Il corpo</td>
+<td>Il corpo</td>
+<td><strong>Li corpi nostri</strong></td>
+<td>Il corpo</td>
+</tr>
+
+
+<tr>
+<td>Sostentare</td>
+<td>sostentare</td>
+<td>Sostentare</td>
+<td><strong>Sostenere</strong></td>
+<td>Sostentare</td>
+</tr>
+
+
+<tr>
+<td>Onestade</td>
+<td>Onestade</td>
+<td>Onestade</td>
+<td><strong>Onestità</strong></td>
+<td>Onestade</td>
+</tr>
+
+
+<tr>
+<td>Nell’opere quasi com’uno specchio</td>
+<td>Nell’opere quasi com’uno specchio</td>
+<td>Nell’opere quasi com’uno specchio</td>
+<td>Nell’opere <strong>molte volte</strong> quasi com’uno specchio</td>
+<td>Nell’opere quasi com’uno specchio</td>
+</tr>
+
+
+<tr>
+<td>Appo i</td>
+<td>Appo i</td>
+<td>Appo i</td>
+<td><strong>Alli</strong></td>
+<td><strong>Alli</strong></td>
+</tr>
+
+
+<tr>
+<td>Donari</td>
+<td>Donari</td>
+<td>Donari</td>
+<td><strong>Doni</strong></td>
+<td>Donari</td>
+</tr>
+
+
+<tr>
+<td>Chi</td>
+<td>Chi</td>
+<td>Chi</td>
+<td><strong>Quale</strong></td>
+<td><strong>Quale</strong></td>
+</tr>
+
+
+<tr>
+<td>Simigliare per lo tempo</td>
+<td>Somigliare per lo tempo</td>
+<td>Somigliare per lo tempo</td>
+<td><strong>Assimigliare nel tempo</strong></td>
+<td><strong>Assimigliare nel tempo</strong></td>
+</tr>
+
+
+<tr>
+<td>Talora</td>
+<td>Talora</td>
+<td>Talora</td>
+<td><strong>Talvolta</strong></td>
+<td>Talora</td>
+</tr>
+
+
+<tr>
+<td>A</td>
+<td>A</td>
+<td>A</td>
+<td><strong>Alli</strong></td>
+<td>A</td>
+</tr>
+
+
+<tr>
+<td>Sono stati molti che sono vivuti</td>
+<td>Sono stati molti che sono vivuti</td>
+<td>Sono stati molti che sono vivuti</td>
+<td>Sono <strong>isusi</strong> molti che <strong>vivuti sono</strong></td>
+<td>Sono stati molti che sono vivuti</td>
+</tr>
+
+
+<tr>
+<td>Od</td>
+<td>Od</td>
+<td>Od</td>
+<td><strong>Overo</strong></td>
+<td>Od</td>
+</tr>
+
+
+<tr>
+<td>Alcuna</td>
+<td>Alcuna</td>
+<td>Alcuna</td>
+<td><strong>Una</strong></td>
+<td>Alcuna</td>
+</tr>
+
+
+<tr>
+<td>Conto</td>
+<td>Conto</td>
+<td>Conto</td>
+<td>Conto</td>
+<td><strong>Contro</strong></td>
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
 
   <!-- ===== METHOD: enough that a stranger could rebuild the result ===== -->
   <section>
