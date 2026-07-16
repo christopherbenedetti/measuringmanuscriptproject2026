@@ -1,48 +1,108 @@
-# Project Template (GitHub Pages)
+# Measuring Manuscripts Project 2026
 
-A tiny static website for a course project. No build step, no server, nothing to
-keep paying for. It is just a few files that GitHub Pages serves as a web page,
-which is why it will still work years from now.
+## Overview
 
-## What's here
+This project explores the textual transmission of the *Novellino*'s Prologue through the comparison of five manuscript and printed witnesses. It was developed as part of the **Measuring Manuscripts 2026** project and combines traditional philological methods with digital collation and clustering techniques to investigate textual relationships.
 
-- `index.html` - the page itself. Edit the text here.
-- `style.css` - the look. Change one color near the top to re-skin it.
-- `figure.png` - your main figure. Replace this file with your own.
-- `data.csv` - your data, in an open and machine-readable format.
-- `LICENSE` - the terms others may reuse your work under (CC BY 4.0).
-- `.nojekyll` - tells GitHub to serve the files exactly as they are.
+The project is published as a static website through GitHub Pages:
 
-## Put it online with GitHub Pages
+https://christopherbenedetti.github.io/measuringmanuscriptproject2026/
 
-1. Make a free account at github.com.
-2. Make a new **public** repository. Any name works. For a personal site the
-   simplest name is `YOUR-USERNAME.github.io`.
-3. Add these files to it. The no-terminal way: on the repository page choose
-   **Add file -> Upload files**, drag everything in, and **Commit**. The git way:
-   `git clone` the repository, copy the files in, then `git add .`,
-   `git commit -m "first version"`, `git push`.
-4. In the repository open **Settings -> Pages**. Under **Build and deployment**
-   set **Source** to **Deploy from a branch**, choose the **main** branch and the
-   **/ (root)** folder, and click **Save**.
-5. Wait a minute, then visit `https://YOUR-USERNAME.github.io/REPO-NAME/`.
+---
 
-Every time you push a change, the live site updates on its own.
+## Research Question
 
-## Make it yours
+The *Novellino* is one of the earliest collections of novellas in Italian literature. Its textual tradition is particularly complex because the prologue survives only in a limited number of witnesses and exhibits significant textual variation.
 
-- Edit the title, your name, the abstract, and the table in `index.html`.
-- Drop in your own `figure.png` and `data.csv`.
-- Rewrite this README to say what your project is and how to rebuild it.
-- Change the accent color at the top of `style.css`.
+The aim of this project is to determine the degree of textual affinity among the surviving witnesses by identifying shared variants and reconstructing their relationships through computational methods.
 
-## Going further
+---
 
-This page is fully static: the data are typed straight into the HTML. The next
-step, if you want a table that updates whenever you edit a data file, is to load
-`data.csv` or a `data.json` with a few lines of JavaScript. That keeps the data
-separate from the page and still needs no server.
+## Corpus
+
+The analysis considers five witnesses:
+
+| Siglum | Witness |
+|--------|----------|
+| **V** | Vatican City, Biblioteca Apostolica Vaticana, MS Vaticano latino 3214 |
+| **P** | Florence, Biblioteca Nazionale Centrale, MS Panciatichiano 32 |
+| **Gz** | *Editio princeps* (1525), edited by Carlo Gualteruzzi |
+| **Gz2** | Reprint of the *editio princeps* |
+| **Bn** | Fourth printed edition (1572), edited by Vincenzio Borghini |
+
+---
+
+## Methodology
+
+The workflow consisted of four main stages.
+
+1. Diplomatic transcriptions of the five witnesses were prepared.
+
+2. The witnesses were collated using **CollateX**.
+
+3. The texts were orthographically normalized in order to eliminate purely graphic variation. The *apparatus* function was then used to identify and classify both scribal errors and redactional variants.
+
+4. Finally, the shared variants were subjected to clustering analysis in order to generate a dendrogram representing the textual relationships among the witnesses.
+
+---
+
+## Results
+
+The principal output of the project is a dendrogram that visualizes the affinities among the witnesses on the basis of their shared textual variants.
+
+The interactive website also includes:
+
+- a brief description of the project;
+- the resulting dendrogram;
+- a synoptic table of selected textual variants;
+- downloadable datasets.
+
+---
+
+## Repository Structure
+
+```
+.
+├── index.html                Website
+├── style.css                 CSS stylesheet
+├── stemma_prologue.png       Dendrogram
+├── novellino_prologo_parma.jpg
+├── tabella_varianti.csv      Variant table
+├── data.csv                  Sample data
+├── LICENSE
+└── README.md
+```
+
+---
+
+## Technologies
+
+- HTML5
+- CSS3
+- GitHub Pages
+- CollateX
+- Computational clustering techniques
+
+---
 
 ## License
 
-Text, images, and data: CC BY 4.0 (reuse with credit). See `LICENSE`.
+Unless otherwise specified, the contents of this repository are distributed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License.
+
+See the `LICENSE` file for details.
+
+---
+
+## Author
+
+Christopher Benedetti
+
+Measuring Manuscripts Project 2026
+
+---
+
+## Citation
+
+If you use this project or its data, please cite:
+
+> Benedetti, Christopher. *The Novellino's Prologue: Between Manuscripts and Printed Editions*. Measuring Manuscripts Project 2026.
